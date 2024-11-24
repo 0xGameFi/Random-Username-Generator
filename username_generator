@@ -1,0 +1,12 @@
+# username_generator.py
+
+import random
+
+adjectives = ["Swift", "Clever", "Brave", "Charming"]
+nouns = ["Fox", "Lion", "Eagle", "Dragon"]
+
+def generate_username():
+    return f"{random.choice(adjectives)}{random.choice(nouns)}{random.randint(1, 100)}"
+
+# Sample usage
+print("Generated Username:", generate_username())
